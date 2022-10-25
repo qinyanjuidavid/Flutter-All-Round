@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 MaterialButton(
                   color: Colors.black,
@@ -59,6 +59,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: const Center(
                     child: Text(
                       "Rows",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                MaterialButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "column/");
+                  },
+                  color: Colors.black,
+                  child: const Center(
+                    child: Text(
+                      "Column",
                       style: TextStyle(
                         color: Colors.white,
                       ),
