@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pro1/configs/routes.dart';
+import 'package:pro1/services/navigation_services.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -15,19 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.light,
       ),
-      home: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
-          Text(
-            "Text On the screen",
-            style: TextStyle(
-              color: Colors.amber,
-              fontSize: 24,
-              wordSpacing: 4,
-            ),
-          ),
-        ],
-      ),
+      initialRoute: "/",
+      routes: appRoutes,
+      navigatorKey: Navigate.instance.navigationKey,
     );
   }
 }
