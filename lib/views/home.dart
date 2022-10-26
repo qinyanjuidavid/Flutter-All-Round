@@ -80,6 +80,23 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )
               ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                MaterialButton(
+                  color: Colors.blue,
+                  onPressed: () {
+                    Navigator.pushNamed(context, "listview/");
+                  },
+                  child: const Text(
+                    "Listview",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ],
             )
           ],
         ),

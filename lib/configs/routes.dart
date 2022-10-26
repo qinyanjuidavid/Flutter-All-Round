@@ -1,3 +1,4 @@
+import 'package:pro1/views/Listview_screen.dart';
 import 'package:pro1/views/Row_screen.dart';
 import 'package:pro1/views/column_screen.dart';
 import 'package:pro1/views/home.dart';
@@ -8,4 +9,5 @@ final appRoutes = {
   "text/": (context) => TextScreen(),
   "rows/": (context) => RowScreen(),
   "column/": (context) => ColumnScreen(),
+  "listview/": (context) => ListViewScreen(),
 };
