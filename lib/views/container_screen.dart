@@ -51,6 +51,8 @@ class _ContainerScreenState extends State<ContainerScreen> {
               height: 100,
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
+                // borderRadius: BorderRadius.circular(30.0),
+                color: Colors.amber,
                 boxShadow: [
                   BoxShadow(
                     color: Colors.grey,
