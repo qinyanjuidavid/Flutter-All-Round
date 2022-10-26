@@ -15,7 +15,9 @@ class _ListViewScreenState extends State<ListViewScreen> {
       child: Scaffold(
         appBar: AppBar(
           leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.popAndPushNamed(context, "/");
+            },
             icon: const Icon(
               Icons.arrow_back,
             ),

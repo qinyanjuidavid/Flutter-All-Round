@@ -1,6 +1,7 @@
 import 'package:pro1/views/Listview_screen.dart';
 import 'package:pro1/views/Row_screen.dart';
 import 'package:pro1/views/column_screen.dart';
+import 'package:pro1/views/container_screen.dart';
 import 'package:pro1/views/home.dart';
 import 'package:pro1/views/text_screen.dart';
 
@@ -10,4 +11,5 @@ final appRoutes = {
   "rows/": (context) => RowScreen(),
   "column/": (context) => ColumnScreen(),
   "listview/": (context) => ListViewScreen(),
+  "containers/": (context) => ContainerScreen(),
 };

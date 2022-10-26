@@ -96,6 +96,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
+                MaterialButton(
+                  color: Colors.blue,
+                  onPressed: () {
+                    Navigator.pushNamed(context, "containers/");
+                  },
+                  child: const Text(
+                    "Containers",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                )
               ],
             )
           ],
