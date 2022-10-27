@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pro1/widgets/footer.dart';
 
 class StateFullScreen extends StatefulWidget {
   final int id;
@@ -67,6 +68,7 @@ class _StateFullScreenState extends State<StateFullScreen> {
             ),
           ],
         ),
+        bottomNavigationBar: const FooterWidget(),
       ),
     );
   }
