@@ -108,6 +108,19 @@ class _HomeScreenState extends State<HomeScreen> {
                       color: Colors.white,
                     ),
                   ),
+                ),
+                MaterialButton(
+                  color: Colors.blue,
+                  onPressed: () {
+                    Navigator.pushNamed(context, "stacked/");
+                  },
+                  child: const Text(
+                    "Stack and Positioned",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
                 )
               ],
             )
