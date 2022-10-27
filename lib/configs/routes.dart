@@ -4,6 +4,7 @@ import 'package:pro1/views/column_screen.dart';
 import 'package:pro1/views/container_screen.dart';
 import 'package:pro1/views/home.dart';
 import 'package:pro1/views/stacked_and_positioned_screen.dart';
+import 'package:pro1/views/statefull_widget.dart';
 import 'package:pro1/views/stateless_widget_screen.dart';
 import 'package:pro1/views/text_screen.dart';
 
@@ -17,5 +18,8 @@ final appRoutes = {
   "stacked/": (context) => StackedAndPositionScreen(),
   "stateless/": (context) => const StateLessScreen(
         name: 'Jane Doe',
+      ),
+  "statefull/": (context) => const StateFullScreen(
+        id: 20,
       ),
 };

@@ -139,7 +139,20 @@ class _HomeScreenState extends State<HomeScreen> {
                       color: Colors.white,
                     ),
                   ),
-                )
+                ),
+                MaterialButton(
+                  color: Colors.grey,
+                  onPressed: () {
+                    Navigator.pushNamed(context, "statefull/");
+                  },
+                  child: const Text(
+                    "Statefull Widget",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ],
             )
           ],
