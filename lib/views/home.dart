@@ -121,6 +121,24 @@ class _HomeScreenState extends State<HomeScreen> {
                       color: Colors.white,
                     ),
                   ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                MaterialButton(
+                  color: Colors.grey,
+                  onPressed: () {
+                    Navigator.pushNamed(context, "stateless/");
+                  },
+                  child: const Text(
+                    "Stateless Widget",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
                 )
               ],
             )
