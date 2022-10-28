@@ -167,6 +167,24 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )
               ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                MaterialButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "buttons/");
+                  },
+                  color: Colors.green,
+                  child: const Text(
+                    "Buttons",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                )
+              ],
             )
           ],
         ),

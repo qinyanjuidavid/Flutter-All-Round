@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 class DrawerScreen extends StatefulWidget {
@@ -44,7 +46,25 @@ class _DrawerScreenState extends State<DrawerScreen> {
             ),
           ),
         ),
-        body: Container(),
+        body: GestureDetector(
+          onTap: () {
+            Navigator.popAndPushNamed(context, "/");
+          },
+          child: const Text(
+            "back",
+            style: TextStyle(
+              color: Colors.blue,
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: const Icon(Icons.add),
+          backgroundColor: Colors.red,
+          onPressed: () {},
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       ),
     );
   }
