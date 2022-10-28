@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class MyAppBar extends StatelessWidget {
   final String title;
 
-  const MyAppBar({
+  const MyAppBar(
+    String s, {
     Key? key,
     required this.title,
   }) : super(key: key);

@@ -153,6 +153,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
+                MaterialButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "drawer/");
+                  },
+                  color: Colors.grey,
+                  child: const Text(
+                    "Drawers",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                )
               ],
             )
           ],

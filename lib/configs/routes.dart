@@ -1,5 +1,6 @@
 import 'package:pro1/views/Listview_screen.dart';
 import 'package:pro1/views/Row_screen.dart';
+import 'package:pro1/views/basic_drawer.dart';
 import 'package:pro1/views/column_screen.dart';
 import 'package:pro1/views/container_screen.dart';
 import 'package:pro1/views/home.dart';
@@ -22,4 +23,5 @@ final appRoutes = {
   "statefull/": (context) => const StateFullScreen(
         id: 20,
       ),
+  "drawer/": (context) => DrawerScreen(),
 };
