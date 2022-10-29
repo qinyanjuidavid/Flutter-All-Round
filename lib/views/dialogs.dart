@@ -39,13 +39,18 @@ class _DialogScreenState extends State<DialogScreen> {
                   barrierDismissible: true,
                   builder: (BuildContext context) {
                     return AlertDialog(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
                       title: const Text("Alert Dialog"),
                       content: const Text("Do you like this book?"),
                       actions: [
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
                           child: const Text(
-                            "No",
+                            "Yes",
                             style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
@@ -55,7 +60,7 @@ class _DialogScreenState extends State<DialogScreen> {
                         ElevatedButton(
                           onPressed: () {},
                           child: const Text(
-                            "Yes",
+                            "Sure",
                             style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
@@ -75,6 +80,58 @@ class _DialogScreenState extends State<DialogScreen> {
                 ),
               ),
             ),
+            ElevatedButton(
+              onPressed: () async {
+                await showDialog<String>(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return SimpleDialog(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      title: const Text(
+                        "Cake Flavors?",
+                        style: TextStyle(
+                          color: Colors.orange,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      children: [
+                        SimpleDialogOption(
+                          onPressed: () {
+                            Navigator.pop(context, "chocolate");
+                          },
+                          child: const Text(
+                            "Chocolate",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        SimpleDialogOption(
+                          onPressed: () {
+                            Navigator.pop(context, "apple");
+                          },
+                          child: const Text(
+                            "Apple",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ],
+                    );
+                  },
+                );
+              },
+              child: const Text(
+                "Click Here",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            )
           ],
         ),
       ),
