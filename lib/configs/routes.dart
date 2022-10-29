@@ -4,6 +4,7 @@ import 'package:pro1/views/basic_drawer.dart';
 import 'package:pro1/views/buttons_screen.dart';
 import 'package:pro1/views/column_screen.dart';
 import 'package:pro1/views/container_screen.dart';
+import 'package:pro1/views/dialogs.dart';
 import 'package:pro1/views/home.dart';
 import 'package:pro1/views/stacked_and_positioned_screen.dart';
 import 'package:pro1/views/statefull_widget.dart';
@@ -26,4 +27,5 @@ final appRoutes = {
       ),
   "drawer/": (context) => DrawerScreen(),
   "buttons/": (context) => ButtonScreen(),
+  "dialog/": (context) => DialogScreen(),
 };

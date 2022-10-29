@@ -183,6 +183,19 @@ class _HomeScreenState extends State<HomeScreen> {
                       color: Colors.white,
                     ),
                   ),
+                ),
+                MaterialButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "dialog/");
+                  },
+                  color: Colors.green,
+                  child: const Text(
+                    "Dialogs",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
                 )
               ],
             )
