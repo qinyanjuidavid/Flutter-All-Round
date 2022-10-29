@@ -30,108 +30,117 @@ class _DialogScreenState extends State<DialogScreen> {
         ),
         body: Column(
           children: [
-            MaterialButton(
-              color: Colors.deepOrange,
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  barrierColor: Colors.orange.withOpacity(0.4),
-                  barrierDismissible: true,
-                  builder: (BuildContext context) {
-                    return AlertDialog(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      title: const Text("Alert Dialog"),
-                      content: const Text("Do you like this book?"),
-                      actions: [
-                        TextButton(
-                          onPressed: () {
-                            Navigator.pop(context);
-                          },
-                          child: const Text(
-                            "Yes",
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                        ElevatedButton(
-                          onPressed: () {},
-                          child: const Text(
-                            "Sure",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        )
-                      ],
-                    );
-                  },
-                );
-              },
-              child: const Text(
-                "Click Me!",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: 5,
             ),
-            ElevatedButton(
-              onPressed: () async {
-                await showDialog<String>(
-                  context: context,
-                  builder: (BuildContext context) {
-                    return SimpleDialog(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      title: const Text(
-                        "Cake Flavors?",
-                        style: TextStyle(
-                          color: Colors.orange,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      children: [
-                        SimpleDialogOption(
-                          onPressed: () {
-                            Navigator.pop(context, "chocolate");
-                          },
-                          child: const Text(
-                            "Chocolate",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                MaterialButton(
+                  color: Colors.deepOrange,
+                  onPressed: () {
+                    showDialog(
+                      context: context,
+                      barrierColor: Colors.orange.withOpacity(0.4),
+                      barrierDismissible: true,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
                           ),
-                        ),
-                        SimpleDialogOption(
-                          onPressed: () {
-                            Navigator.pop(context, "apple");
-                          },
-                          child: const Text(
-                            "Apple",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                          title: const Text("Alert Dialog"),
+                          content: const Text("Do you like this book?"),
+                          actions: [
+                            TextButton(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              child: const Text(
+                                "Yes",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
-                          ),
-                        ),
-                      ],
+                            ElevatedButton(
+                              onPressed: () {},
+                              child: const Text(
+                                "Sure",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            )
+                          ],
+                        );
+                      },
                     );
                   },
-                );
-              },
-              child: const Text(
-                "Click Here",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
+                  child: const Text(
+                    "Click Me!",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
-              ),
-            )
+                ElevatedButton(
+                  onPressed: () async {
+                    await showDialog<String>(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return SimpleDialog(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          title: const Text(
+                            "Cake Flavors?",
+                            style: TextStyle(
+                              color: Colors.orange,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          children: [
+                            SimpleDialogOption(
+                              onPressed: () {
+                                Navigator.pop(context, "chocolate");
+                              },
+                              child: const Text(
+                                "Chocolate",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            SimpleDialogOption(
+                              onPressed: () {
+                                Navigator.pop(context, "apple");
+                              },
+                              child: const Text(
+                                "Apple",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  },
+                  child: const Text(
+                    "Click Here",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
