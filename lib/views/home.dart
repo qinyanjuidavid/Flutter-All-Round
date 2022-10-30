@@ -228,6 +228,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
+                MaterialButton(
+                  color: Colors.red,
+                  onPressed: () {
+                    Navigator.pushNamed(context, "scrolling/");
+                  },
+                  child: const Text(
+                    "Scrolling And Constraints",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                )
               ],
             )
           ],
