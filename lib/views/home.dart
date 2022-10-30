@@ -196,6 +196,19 @@ class _HomeScreenState extends State<HomeScreen> {
                       color: Colors.white,
                     ),
                   ),
+                ),
+                MaterialButton(
+                  color: Colors.green,
+                  onPressed: () {
+                    Navigator.popAndPushNamed(context, "layoutbuilder/");
+                  },
+                  child: const Text(
+                    "Layout Builder",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
                 )
               ],
             )

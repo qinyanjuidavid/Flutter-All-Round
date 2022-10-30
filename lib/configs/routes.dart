@@ -1,3 +1,4 @@
+import 'package:pro1/views/Layout_builder_screen.dart';
 import 'package:pro1/views/Listview_screen.dart';
 import 'package:pro1/views/Row_screen.dart';
 import 'package:pro1/views/basic_drawer.dart';
@@ -28,4 +29,5 @@ final appRoutes = {
   "drawer/": (context) => DrawerScreen(),
   "buttons/": (context) => ButtonScreen(),
   "dialog/": (context) => DialogScreen(),
+  "layoutbuilder/": (context) => LayoutBuilderScreen(),
 };
