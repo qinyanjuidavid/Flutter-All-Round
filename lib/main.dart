@@ -14,8 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "FreeMob",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
+      theme: ThemeData.light().copyWith(
+        // fontFamily: "Roboto",
         brightness: Brightness.light,
+        focusColor: Colors.black,
+        primaryColor: Colors.amber,
       ),
       initialRoute: "/",
       routes: appRoutes,

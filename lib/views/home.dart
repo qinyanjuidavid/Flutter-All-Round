@@ -34,6 +34,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 fontSize: 24,
               ),
             ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: 10,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -81,6 +85,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 )
               ],
             ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: 10,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -123,6 +131,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ],
+            ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: 10,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -168,6 +180,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 )
               ],
             ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: 10,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -211,6 +227,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )
               ],
+            ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: 10,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
