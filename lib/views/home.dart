@@ -211,6 +211,24 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )
               ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                MaterialButton(
+                  color: Colors.red,
+                  onPressed: () {
+                    Navigator.pushNamed(context, "orientation/");
+                  },
+                  child: const Text(
+                    "Orientation & MediaQuery",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ],
             )
           ],
         ),

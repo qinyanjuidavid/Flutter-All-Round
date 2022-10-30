@@ -7,6 +7,7 @@ import 'package:pro1/views/column_screen.dart';
 import 'package:pro1/views/container_screen.dart';
 import 'package:pro1/views/dialogs.dart';
 import 'package:pro1/views/home.dart';
+import 'package:pro1/views/orientations_and_mediaquery.dart';
 import 'package:pro1/views/stacked_and_positioned_screen.dart';
 import 'package:pro1/views/statefull_widget.dart';
 import 'package:pro1/views/stateless_widget_screen.dart';
@@ -30,4 +31,5 @@ final appRoutes = {
   "buttons/": (context) => ButtonScreen(),
   "dialog/": (context) => DialogScreen(),
   "layoutbuilder/": (context) => LayoutBuilderScreen(),
+  "orientation/": (context) => OrientationAndMediaQueryScreen(),
 };
