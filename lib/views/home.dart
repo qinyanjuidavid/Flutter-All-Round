@@ -262,6 +262,28 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )
               ],
+            ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                MaterialButton(
+                  color: Colors.orangeAccent,
+                  onPressed: () {
+                    Navigator.pushNamed(context, "setstate/");
+                  },
+                  child: const Text(
+                    "Set State",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                )
+              ],
             )
           ],
         ),
