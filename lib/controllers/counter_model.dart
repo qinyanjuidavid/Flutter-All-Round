@@ -17,3 +17,8 @@ class CounterModel with ChangeNotifier {
 
   int get currentCount => _counter;
 }
+
+class Something {
+  final description = "something is better than nothing";
+  final descriptionCache = {};
+}

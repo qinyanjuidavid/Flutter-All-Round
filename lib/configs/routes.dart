@@ -8,6 +8,7 @@ import 'package:pro1/views/container_screen.dart';
 import 'package:pro1/views/dialogs.dart';
 import 'package:pro1/views/home.dart';
 import 'package:pro1/views/orientations_and_mediaquery.dart';
+import 'package:pro1/views/provider_contact_screen.dart';
 import 'package:pro1/views/provider_screen.dart';
 import 'package:pro1/views/scrolling_and_constraints.dart';
 import 'package:pro1/views/set_state.dart';
@@ -38,4 +39,5 @@ final appRoutes = {
   "scrolling/": (context) => ScrollingAndConstraintsScreen(),
   "setstate/": (context) => SetStateScreen(),
   "providercounter/": (context) => ProviderScreen(),
+  "contacts/": (context) => ContactScreen(),
 };

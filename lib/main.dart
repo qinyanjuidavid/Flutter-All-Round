@@ -13,8 +13,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => CounterModel(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => CounterModel(),
+        ),
+      ],
       child: MaterialApp(
         title: "FreeMob",
         debugShowCheckedModeBanner: false,

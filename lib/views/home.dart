@@ -293,6 +293,17 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "contacts/");
+                  },
+                  child: const Text(
+                    "Provider Contact",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 )
               ],
             )
