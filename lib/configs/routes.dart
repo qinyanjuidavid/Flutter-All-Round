@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:pro1/views/Layout_builder_screen.dart';
 import 'package:pro1/views/Listview_screen.dart';
 import 'package:pro1/views/Row_screen.dart';
@@ -40,4 +42,5 @@ final appRoutes = {
   "setstate/": (context) => SetStateScreen(),
   "providercounter/": (context) => ProviderScreen(),
   "contacts/": (context) => ContactScreen(),
+  "newcontact/": (context) => NewContactView(),
 };
