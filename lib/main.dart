@@ -1,7 +1,9 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pro1/configs/routes.dart';
 import 'package:pro1/controllers/counter_model.dart';
 import 'package:pro1/services/navigation_services.dart';
+import 'package:pro1/views/navigating_with_provider.dart';
 import 'package:provider/provider.dart';
 
 void main(List<String> args) {

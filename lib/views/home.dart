@@ -340,6 +340,28 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                ),
+              ],
+            ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: 5,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                MaterialButton(
+                  color: Colors.deepOrange,
+                  onPressed: () {
+                    Navigator.pushNamed(context, "provider-navigation/");
+                  },
+                  child: const Text(
+                    "Navigation With Flutter",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
                 )
               ],
             )

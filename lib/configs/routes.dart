@@ -9,6 +9,7 @@ import 'package:pro1/views/column_screen.dart';
 import 'package:pro1/views/container_screen.dart';
 import 'package:pro1/views/dialogs.dart';
 import 'package:pro1/views/home.dart';
+import 'package:pro1/views/navigating_with_provider.dart';
 import 'package:pro1/views/orientations_and_mediaquery.dart';
 import 'package:pro1/views/provider_contact_screen.dart';
 import 'package:pro1/views/provider_screen.dart';
@@ -49,4 +50,5 @@ final appRoutes = {
   "routing/": (context) => const RoutingHomePage(),
   "random/": (context) => const RandomPage(),
   "navigate-todo/": (context) => TodoScreen(),
+  "provider-navigation/": (contect) => ProviderTodoScreen(),
 };
