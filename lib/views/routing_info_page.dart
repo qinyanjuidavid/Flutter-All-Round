@@ -13,6 +13,10 @@ class InfoPage extends StatefulWidget {
 }
 
 class _InfoPageState extends State<InfoPage> {
+  void _returnSomething() {
+    Navigator.pop(context, widget.item);
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -45,6 +49,18 @@ class _InfoPageState extends State<InfoPage> {
             Text(
               widget.item.description,
             ),
+            ElevatedButton(
+              onPressed: () {
+                _returnSomething();
+              },
+              child: const Text(
+                "Go Back",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                ),
+              ),
+            )
           ],
         ),
       ),
