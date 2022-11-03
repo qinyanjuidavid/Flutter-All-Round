@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pro1/configs/routing.dart';
 
 class RoutingHomePage extends StatelessWidget {
   const RoutingHomePage({Key? key}) : super(key: key);
@@ -24,7 +25,10 @@ class RoutingHomePage extends StatelessWidget {
         ),
         body: Center(
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              // Navigator.of(context).pushNamed(RouteGenerator.randomPage);
+              Navigator.pushNamed(context, "random/");
+            },
             child: const Text(
               "Random Page",
               style: TextStyle(

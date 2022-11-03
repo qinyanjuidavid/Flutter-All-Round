@@ -4,7 +4,7 @@ import 'package:pro1/views/random_routing_screen.dart';
 import 'package:pro1/views/routing_and_navigation.dart';
 
 class RouteGenerator {
-  static const String homePage = "home/";
+  static const String homePage = "/home";
   static const String randomPage = "/random";
 
   RouteGenerator._() {}

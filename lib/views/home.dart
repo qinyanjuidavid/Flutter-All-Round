@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pro1/configs/routing.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key? key}) : super(key: key);
@@ -307,14 +308,35 @@ class _HomeScreenState extends State<HomeScreen> {
                 )
               ],
             ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: 5,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 MaterialButton(
-                  onPressed: () {},
+                  color: Colors.brown,
+                  onPressed: () {
+                    Navigator.pushNamed(context, "routing/");
+                  },
                   child: const Text(
                     "Routing and Navigation",
                     style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                MaterialButton(
+                  color: Colors.brown,
+                  onPressed: () {
+                    Navigator.pushNamed(context, "navigate-todo/");
+                  },
+                  child: const Text(
+                    "Navigating Todo",
+                    style: TextStyle(
+                      color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
                   ),

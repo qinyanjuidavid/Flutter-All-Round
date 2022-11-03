@@ -11,7 +11,9 @@ class RandomPage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.popAndPushNamed(context, "routing/");
+            },
             icon: const Icon(
               Icons.arrow_back,
             ),

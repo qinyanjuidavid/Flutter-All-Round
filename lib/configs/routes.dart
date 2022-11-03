@@ -14,6 +14,7 @@ import 'package:pro1/views/provider_contact_screen.dart';
 import 'package:pro1/views/provider_screen.dart';
 import 'package:pro1/views/random_routing_screen.dart';
 import 'package:pro1/views/routing_and_navigation.dart';
+import 'package:pro1/views/routing_todo.dart';
 import 'package:pro1/views/scrolling_and_constraints.dart';
 import 'package:pro1/views/set_state.dart';
 import 'package:pro1/views/stacked_and_positioned_screen.dart';
@@ -47,4 +48,5 @@ final appRoutes = {
   "newcontact/": (context) => NewContactView(),
   "routing/": (context) => const RoutingHomePage(),
   "random/": (context) => const RandomPage(),
+  "navigate-todo/": (context) => TodoScreen(),
 };
