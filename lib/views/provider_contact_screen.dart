@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uuid/uuid.dart';
 
 class ContactScreen extends StatefulWidget {
   ContactScreen({Key? key}) : super(key: key);
@@ -8,14 +9,15 @@ class ContactScreen extends StatefulWidget {
 }
 
 class Contact {
+  final String id;
   final String name;
   Contact({
     required this.name,
-  });
+  }) : id = const Uuid().v4();
 }
 
-class ContactBook {
-  ContactBook._sharedInstance();
+class ContactBook extends ValueNotifier<List<Contact>> {
+  ContactBook._sharedInstance() : super([]);
   static final ContactBook _shared = ContactBook._sharedInstance();
   factory ContactBook() => _shared;
 
@@ -23,18 +25,18 @@ class ContactBook {
     Contact(name: "John Doe"),
   ];
 
-  int get length => _contacts.length;
+  int get length => value.length;
 
   void add({required Contact contact}) {
-    _contacts.add(contact);
+    value.add(contact);
   }
 
   void remove({required Contact contact}) {
-    _contacts.remove(contact);
+    value.remove(contact);
   }
 
   Contact? contact({required int atIndex}) =>
-      _contacts.length > atIndex ? _contacts[atIndex] : null;
+      value.length > atIndex ? _contacts[atIndex] : null;
 }
 
 class _ContactScreenState extends State<ContactScreen> {

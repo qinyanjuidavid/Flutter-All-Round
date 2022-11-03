@@ -306,6 +306,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )
               ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                MaterialButton(
+                  onPressed: () {},
+                  child: const Text(
+                    "Routing and Navigation",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                )
+              ],
             )
           ],
         ),
